@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Multi-threaded SUM</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_num_of_rows">numRows:</string>
+    <string name="str_num_of_cols">numCols:</string>
+    <string name="str_min_value">minValue:</string>
+    <string name="str_max_value">maxValue:</string>
+    <string name="Generador">Generate the matrix, and make the sum</string>
+
+</resources>

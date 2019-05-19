@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_filas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/str_num_of_rows" />
+
+    <TextView
+        android:id="@+id/tv_minvalor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_minvalor"
+        android:layout_alignBottom="@+id/et_minvalor"
+        android:layout_alignLeft="@+id/tv_columnas"
+        android:text="@string/str_min_value" />
+
+    <EditText
+        android:id="@+id/et_cols"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_filas"
+        android:layout_below="@+id/et_filas"
+        android:layout_marginTop="14dp"
+        android:ems="4"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_maxvalor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_maxvalor"
+        android:text="@string/str_max_value" />
+
+    <Button
+        android:id="@+id/btn_generador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_maxvalor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:onClick="principal"
+        android:text="@string/Generador" />
+
+    <EditText
+        android:id="@+id/et_filas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_filas"
+        android:layout_centerHorizontal="true"
+        android:ems="4"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_minvalor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_cols"
+        android:layout_below="@+id/et_cols"
+        android:layout_marginTop="14dp"
+        android:ems="4"
+        android:inputType="numberSigned" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_maxvalor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_minvalor"
+        android:layout_below="@+id/et_minvalor"
+        android:layout_marginTop="15dp"
+        android:ems="4"
+        android:inputType="numberSigned" />
+
+    <TextView
+        android:id="@+id/tv_columnas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_minvalor"
+        android:layout_alignLeft="@+id/tv_filas"
+        android:text="@string/str_num_of_cols" />
+    
+</RelativeLayout>
